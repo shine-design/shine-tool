@@ -33,6 +33,12 @@
   "author": "qulongjun",
   "license": "MIT",
   "dependencies": {
+    "download-git-repo": "^1.1.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.2.0",
+    "ora": "^3.0.0",
+    "shelljs": "^0.8.2",
+    "tracer": "^0.9.1",
     "yargs": "^12.0.2"
   }
 }
