@@ -17,16 +17,25 @@ shine-tool update 更新当前模板
 
  */
 
-yargs.command(
-    'init [project]',
-    '创建项目',
-    (yargs) => {
-        yargs.positional('project', {
-            describe: '自定义项目名称',
-            default: 5000
-        })
-    },
-    (argv) => {
-        console.log(argv.project)
+
+const argv = yargs
+    .command({
+        command: 'init [projectName]',
+        aliases: ['i'],
+        desc: '创建项目',
+        builder: yargs => {
+            yargs.positional(
+                'projectName',
+                {
+                    alias: 'i',
+                    describe: '项目名称',
+                    default: 'demo'
+                })
+        },
+        handler: (argv) => {
+            const projectName = argv.projectName;
+            console.log(projectName);
+        }
     })
+    .help()
     .argv;
