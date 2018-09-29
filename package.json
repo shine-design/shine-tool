@@ -1,6 +1,6 @@
 {
   "name": "shine-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "为开发者、设计师和产品经理准备的 UI 设计语言",
   "main": "index.js",
   "bin": {
